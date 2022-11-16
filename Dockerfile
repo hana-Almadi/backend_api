@@ -2,6 +2,7 @@ FROM maven:3.8.6-openjdk-18-slim
 WORKDIR /UserService
 COPY . .
 RUN mvn  install
+EXPOSE 8080
 CMD mvn spring-boot:run
 
 #FROM openjdk:11-jre-slim
